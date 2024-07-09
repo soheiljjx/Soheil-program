@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="switch-tab">
+          <a onclick="switchTab('signin')" class="tab-switch active">Sign In</a>
+          <a onclick="switchTab('signup')" class="tab-switch">Sign Up</a>
+        </div>
+        
+        <div id="signin" class="tab">
+          <h2>Sign In</h2>
+          <form>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" name="signin_email" placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="signin_password" placeholder="Enter your password">
+            </div>
+            
+            <div class="form-group">
+              <button type="submit">Sign In</button>
+            </div>
+          </form>
+        </div>
+        
+        <div id="signup" class="tab" style="display: none;">
+          <h2>Sign Up</h2>
+          <form>
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="signup_name" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" name="signup_email" placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="signup_password" placeholder="Enter your password">
+            </div>
+            
+            <div class="form-group">
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+      <script src="test.js">
+        // JavaScript code
+        function switchTab(tab) {
+          var tabs = document.getElementsByClassName('tab');
+          for (var i = 0; i < tabs.length; i++) {
+            tabs[i].style.display = "none";
+          }
+          document.getElementById(tab).style.display = "block";
+          
+          var switchLinks = document.getElementsByClassName('tab-switch');
+          for (var i = 0; i < switchLinks.length; i++) {
+            switchLinks[i].classList.remove("active");
+          }
+          event.currentTarget.classList.add("active");
+        }
+      </script>
+
+</body>
+
+</html>

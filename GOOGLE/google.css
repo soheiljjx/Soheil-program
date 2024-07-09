@@ -1,0 +1,54 @@
+body {
+    background-color: rgba(245, 222, 179, 0.514);
+}
+
+#logo {
+    margin: 50px 350px;
+    margin-top: 90px;
+}
+
+#search {
+   margin-left: 410px;
+   margin-right: 350px;
+   margin-top: -20px;
+}
+
+#ss {
+    width: 350px;
+    height: 35px;
+    border: 1px rgb(80, 74, 74) solid;
+    border-radius: 10px;
+}
+
+#w3 {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 550px;
+    background-color: wheat;
+    border: 2px rgb(143, 143, 150) solid;
+    border-width: 25px;
+    border-radius: 40px;
+    display: inline;
+}
+
+#gmail {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 670px;
+    background-color: wheat;
+    border: 2px rgb(143, 143, 150) solid;
+    border-width: 23px;
+    border-radius: 60px;
+    display: inline;
+}
+
+#hello {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 420px;
+    background-color: wheat;
+    border: 2px rgb(143, 143, 150) solid;
+    border-width: 20px;
+    border-radius: 60px;
+    display: inline;
+}

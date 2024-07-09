@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Content</a>
+            <a href="">Info</a>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <div class="list">
+            <div class="item">
+                <img src="code10.jpg">
+                <div class="content">
+                    <div class="author">html.css.js_</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">Oh My GOD!</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut tempora architecto suscipit dicta voluptates. Quos animi saepe laudantium minima doloribus perferendis explicabo dolorum illum impedit nihil facere, fugit voluptate
+                        architecto veniam quas accusamus dolor ex ducimus asperiores neque alias natus. Praesentium placeat nostrum illum? Adipisci sint eaque beatae dicta.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <Script>
+        thumbnailBordrDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 2000;
+let timeAutoNext = 3000;
+
+nextDom.onclick = function() {
+    showSlider('next');
+}
+
+prevDom.onclick = function() {
+    showSlider('prev');
+}
+let runTimeOut;
+let runNextAuto = setTimeout(() => { nextDom.click(); }, timeAutoNext)
+
+function showSlider(type) {
+    let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+
+    if (type == 'next') {
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBordrDom.appendChild(thumbnailItemsDom[0]);
+        carouselDom.classList.add('next');
+    } else {
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBordrDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carouselDom.classList.add('perv');
+    }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove('next');
+        carouselDom.classList.remove('perv')
+    }, timeRunning)
+
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => { nextDom.click(); }, timeAutoNext)
+}
+    </Script>
+</body>
+
+</html>

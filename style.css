@@ -1,0 +1,52 @@
+#hello {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button.helloButton {
+    display: inline-block;
+    background-color: aquamarine;
+}
+
+table,th,td {
+    color: aqua;
+    border: groove black 5px;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: large;
+}
+
+h1,h2,h4 {
+    background-color: blueviolet;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#so {
+    background-color: aqua;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#se {
+    background-color: seagreen;
+    color: rgb(235, 18, 224);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+pre {
+    background-image: url("code2.jpg");
+    background-color: rgb(231, 231, 231);
+    color: rgb(255, 238, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+textarea {
+    width: 30px;
+    height: 40px;
+}
+.ads {
+    padding: 20px;
+}

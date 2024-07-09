@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="icon" href="code7.webp" type="image/x-icon">
+    <title>first program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="hello">
+        <button class="helloButtonS" type="button" onclick="alert('hello world!')">click me!</button>
+    </div><br><br>
+
+    <form method="get" autocomplete="on">
+        <fieldset>
+            <legend>personality:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+            <input type="submit" value="OK">
+            <input type="reset" value="reset">
+        </fieldset>
+    </form><br><br><br>
+
+    <form method="get" autocomplete="on">
+        <label for="color">whats your favorite color?</label>
+        <input type="color" name="color" id="color" value="#454545">
+        <input type="submit">
+    </form><br><br><br>
+
+    <form method="get" autocomplete="on">
+        <label for="bt">whats your birthday?</label>
+        <input type="date" name="bt" id="bt">
+        <input type="submit">
+    </form><br><br><br>
+
+    <form method="get" autocomplete="on">
+        <label for="max">enter a date from before 1980-01-01:</label>
+        <input type="date" name="max" id="max" max="1979-12-31"><br>
+        <label for="min">enter a date form after 2000-01-01:</label>
+        <input type="date" name="min" id="min" min="2000-01-02"><br>
+        <input type="submit">
+    </form><br><br><br>
+
+    <form method="get" autocomplete="on">
+        <label for="dt">what is today dates?</label>
+        <input type="datetime-local" id="dt" name="dt"><br>
+        <input type="submit">
+    </form><br><br><br>
+
+    <form method="get" autocomplete="on">
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="google">google</option>
+            <option value="chrome">chrome</option>
+            <option value="safari">safari</option>
+            <option value="opera">opera</option>
+            <option value="edge">edge</option>
+        </datalist>
+        <input type="submit" value="select">
+    </form><br><br><br>
+
+    <form method="get" autocomplete="on">
+        <label for="pwd">password:</label>
+        <input type="password" id="pwd" name="pwd"><br>
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name" value="soheil"><br>
+        <input type="submit" value="got it!">
+    </form><br><br><br>
+        
+    <form method="get" autocomplete="on">
+        <input type="text" id="fname" name="fname" >
+        <label for="fname">first name:</label><br>
+        <input type="text" id="lname" name="lname" value="jafari">
+        <label for="lname">Last name:</label>
+    </form><br><br><br>
+
+    <form method="get" autocomplete="on">
+        <label for="cars">choose a car:</label>
+        <select name="cars" id="cars" size="1" multiple>
+            <option value="405">405</option>
+            <option value="EF7" selected>EF7</option>
+            <option value="pride">pride</option>
+            <option value="207i">207i</option><br>
+            <input type="submit" value="submit">
+        </select>
+    </form><br><br><br>
+
+    <form method="get" autocomplete="on">
+        <textarea name="massage">
+         the cat was playing in the garden!
+        </textarea><br><br><br>
+
+        <input type="radio" id="html" name="html" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="css" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="submit" name="button">
+    </form><br><br><br>
+
+    <form method="get" autocomplete="on">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+        <label for="vehicle1">I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+        <label for="vehicle2">I have a car</label><br>
+        <input type="submit" name="button"><br><br>
+    </form>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th>name</th>
+            <td>soheil</td>
+            <td>pari</td>
+            <td>sepi</td>
+        </tr>
+        <tr>
+            <th>age</th>
+            <td>19</td>
+            <td>16</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <th>avg</th>
+            <td>13</td>
+            <td>18</td>
+            <td>16</td>
+        </tr>
+    </table>
+
+    <a href="http://www.w3schools.com">link</a>
+    <a href="#c2">jump to chapter 2</a>
+    <a href="#c4">jump to chapter 3</a>
+
+    <hr>
+
+    <p>
+    <blockquote cite="http://www.w3schools.com">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda porro ea nisi libero molestiae ipsa sapiente
+        aperiam et, mollitia, corporis sit adipisci tempora, doloremque a similique impedit praesentium eius rerum!
+
+    </blockquote>
+    </p>
+
+    <hr>
+
+    <p><q>build your future</q></p>
+    <p>
+        soheil address:
+    <address>
+        email: jsoheil47@gmail.com <br>
+        phone number: 09136429604 <br>
+    </address>
+    </p>
+
+    <hr>
+
+    <bdo dir="rtl">soheil jafari</bdo>
+
+    <hr>
+
+    <h1 title="im header1">this is <mark>heading</mark></h1>
+    <p id="so" lang="en" style="font-size: 300%;">Lorem ipsum dolor sit <del>amet</del> <ins>consectetur</ins>,
+        adipisicing elit. Quo fugit soluta cum maiores commodi impedit accusamus. Cumque placeat consequuntur libero.
+        Saepe, nulla. Excepturi at est non ipsam similique fugiat iu
+    </p>
+
+    <hr>
+
+    <h2 title="im header 2" id="c2">this is <strong>another</strong> heading</h2>
+    <p id="se" lang="en"><small>Lorem</small> ipsum dolor sit amet consectetur adipisicing elit. In deserunt numquam
+        exercitationem at vel a, reiciendis ipsum autem laudantium quibusdam soluta explicabo. Architecto, quod.
+        Recusandae adipisci sunt architecto expedita quos.</p>
+
+    <hr>
+
+    <h4 title="im header 3" id="c4"><em>poem</em> heading</h4>
+    <img src="code.jpg" alt="w3schools.com" width="500" height="500">
+
+    <hr>
+
+    <a href="https://www.google.com/" target="_blank">
+        <img src="code2.jpg" alt="white lion" style="height: 43px;width: 43px;">
+    </a>
+
+    <hr>
+
+    <a href="mailto:jsoheil@gmail.com" title="email address">soheil gmail</a>
+
+    <hr>
+
+    <div class="ads">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, enim!</div>
+
+</body>
+
+</html>

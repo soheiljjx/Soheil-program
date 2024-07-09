@@ -1,0 +1,29 @@
+h1 {
+    background-image: url('google.jpg');
+}
+
+table ,th ,td {
+    border: 2px solid rgb(9, 129, 79);
+    border-radius: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+#top:link , #end:link {
+    color: aqua;
+}
+
+#top:visited , #end:visited {
+    color: rgb(255, 0, 157);
+}
+
+#top:hover , #end:hover  {
+    color: yellowgreen;
+}
+
+#top:active , #end:active {
+    color: rgb(20, 9, 83);
+}
